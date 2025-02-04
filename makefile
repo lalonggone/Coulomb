@@ -11,3 +11,5 @@ lint:
 	flatpak run --command=flatpak-builder-lint org.flatpak.Builder --exceptions appstream app/src/main/resources/io.github.hamza_algohary.Coulomb.metainfo.xml
 preview:
 	gnome-software --show-metainfo app/src/main/resources/io.github.hamza_algohary.Coulomb.metainfo.xml
+update:
+	git submodule update --recursive --remote
