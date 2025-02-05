@@ -110,7 +110,7 @@ public class HamburgerMenu extends Popover {
         //box.append(new MenuButton("Preferences" , Align.START , ()->{}));
         box.append(new MenuButton("About" , Align.START , ()->{
             //new AboutDialog().show();
-            new MyAbout().run(Main.app.window , "0.6.0");
+            new MyAbout().run(Main.app.window , MainApplication.APP_VERSION);
         } , this));
 
         stack.setTransitionType(StackTransitionType.SLIDE_LEFT_RIGHT);

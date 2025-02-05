@@ -34,10 +34,12 @@ public class MainApplication extends Application{
     CssProvider customThemeProvider;
 
     public boolean ctrlIsPressed = false;
+    public static final String APP_ID = "io.github.hamza_algohary.Coulomb";
+    public static final String APP_VERSION = "0.6.1";
 
     Function<Void,Void> onStart = (Void v)->{return null;};
     MainApplication(String args[]){
-        super("io.github.hamza_algohary.Coulomb", ApplicationFlags.DEFAULT_FLAGS);
+        super(APP_ID, ApplicationFlags.DEFAULT_FLAGS);
         this.onActivate(()->{
             window = new ApplicationWindow(this);
             headerBar = new MainHeaderBar();

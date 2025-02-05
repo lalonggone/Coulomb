@@ -3,16 +3,21 @@ package graphics;
 import java.io.IOException;
 import java.util.Scanner;
 
+import ch.bailu.gtk.gdk.Display;
 import ch.bailu.gtk.gdk.GdkConstants;
 import ch.bailu.gtk.gdk.Paintable;
 import ch.bailu.gtk.gdk.RGBA;
 import ch.bailu.gtk.gdkpixbuf.Pixbuf;
+import ch.bailu.gtk.gtk.DirectionType;
 import ch.bailu.gtk.gtk.Gtk;
+import ch.bailu.gtk.gtk.IconTheme;
 import ch.bailu.gtk.gtk.Image;
 import ch.bailu.gtk.lib.util.JavaResource;
 import ch.bailu.gtk.type.Str;
+import ch.bailu.gtk.type.Strs;
 import ch.bailu.gtk.type.exception.AllocationError;
 import gui.Main;
+import gui.MainApplication;
 import gui.Platform;
 import resources.Resource;
 
@@ -150,7 +155,12 @@ public class Color{
 
     public static Paintable logo() {
         try {
-            return newImage("coulomb" , 256).getPaintable();
+            try {
+                IconTheme theme = IconTheme.getForDisplay(Display.getDefault());
+                return theme.lookupIcon(MainApplication.APP_ID , new Strs(new String[0]) , 255 , 1 , 4 , 0).asPaintable();
+            }catch (Exception e) {
+                return newImage("coulomb" , 256).getPaintable();
+            }
         }catch (Exception e) {
             System.out.println("Couldn't load logo.");
             return new Image().getPaintable();
