@@ -1,4 +1,6 @@
 # A makefile for building, testing and publishing flatpak builds.
+remote=https://github.com/hamza-algohary/io.github.hamza_algohary.Coulomb
+
 builder:
 	flatpak-builder --user --install --disable-cache --repo=org.flathub app/build/flatpak io.github.hamza_algohary.Coulomb/io.github.hamza_algohary.Coulomb.yaml --force-clean
 debug:
@@ -13,9 +15,11 @@ lint:
 preview:
 	gnome-software --show-metainfo app/src/main/resources/io.github.hamza_algohary.Coulomb.metainfo.xml
 clone:
-	git clone -b testing https://github.com/flathub/io.github.hamza_algohary.Coulomb
+	git clone -b testing $(remote)
 update:
 	cd io.github.hamza_algohary.Coulomb && git pull
 publish: builder lint
 	cd io.github.hamza_algohary.Coulomb && git push
-	echo "visit https://github.com/flathub/io.github.hamza_algohary.Coulomb/tree/testing and open pull request."
+	echo "visit https://github.com/flathub/io.github.hamza_algohary.Coulomb and open pull request."
+delete:
+	rm -rf io.github.hamza_algohary.Coulomb
