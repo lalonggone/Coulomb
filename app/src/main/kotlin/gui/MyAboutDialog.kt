@@ -26,9 +26,10 @@ import ch.bailu.gtk.type.Str
 import graphics.Color
 import gui.rowBox
 
-public class MyAbout {
-    public fun run(parentWindow : Window , version : String) = aboutDialog(parentWindow , version)
-}
+//public class MyAbout(parentWindow : Window , version : String) {
+//    val dialog = aboutDialog(parentWindow , version)
+//    //public fun run(parentWindow : Window , version : String) = aboutDialog(parentWindow , version)
+//}
 
 
 
@@ -52,6 +53,7 @@ public fun aboutDialog(parentWindow : Window , version : String) {
     ).shown()
 
     var window = Window()
+    window.ref()
     var headerBar = HeaderBar()
     var stack = Stack()
     stack.setTransitionType(StackTransitionType.SLIDE_LEFT_RIGHT)
@@ -137,16 +139,13 @@ public fun aboutDialog(parentWindow : Window , version : String) {
                         )
                     )
                 )
-            , "Main")
+                , "Main")
 
             stack.addNamed(licensePage, "license")
             stack.addNamed(creditsPage , "credits")
         
+        show()
 
     }
-
-
-
-
 }
 

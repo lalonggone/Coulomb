@@ -111,7 +111,6 @@ public fun Window.titlebar(titlebar : Widget?) = this.apply {
 
 public operator fun <T : Widget> T.plus (block : T.() -> Unit) = this.apply {
     block()
-    show()
 }
 
 public operator fun Button.minus(handler : ()-> Unit) = this.apply {

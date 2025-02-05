@@ -23,6 +23,7 @@ public class Icon extends Image{
 
     public void updateSettings(){
         try{
+            System.out.println("=======Updating Icon: "+name+" ================");
             Color.initImage(this, name);
         }catch(Exception e){
             System.out.println("Could not load icon " + name);

@@ -155,15 +155,10 @@ public class Color{
 
     public static Paintable logo() {
         try {
-            try {
-                IconTheme theme = IconTheme.getForDisplay(Display.getDefault());
-                var icon = theme.lookupIcon(MainApplication.APP_ID , new Strs(new String[0]) , 256 , 1 , 4 , 0).asPaintable();
-                if (icon == null) {
-                    throw new Exception();
-                } else {
-                    return icon;
-                }
-            }catch (Exception e) {
+            IconTheme theme = IconTheme.getForDisplay(Display.getDefault());
+            if(theme.hasIcon(MainApplication.APP_ID)) {
+                return theme.lookupIcon(MainApplication.APP_ID , new Strs(new String[0]) , 256 , 1 , 4 , 0).asPaintable();
+            } else {
                 return newImage("coulomb" , 256).getPaintable();
             }
         }catch (Exception e) {

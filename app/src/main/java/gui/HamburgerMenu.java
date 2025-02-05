@@ -9,6 +9,7 @@ public class HamburgerMenu extends Popover {
     Box box = new Box(Orientation.VERTICAL , 0);
     Stack stack = new Stack();
     ExamplesBox examplesBox;
+
     //ListBox list = new ListBox();
     //Button preferencesButton = Button.newWithLabelButton("Preferences");
     //Button aboutButton = Button.newWithLabelButton("About");
@@ -110,7 +111,9 @@ public class HamburgerMenu extends Popover {
         //box.append(new MenuButton("Preferences" , Align.START , ()->{}));
         box.append(new MenuButton("About" , Align.START , ()->{
             //new AboutDialog().show();
-            new MyAbout().run(Main.app.window , MainApplication.APP_VERSION);
+
+            //new MyAbout().run(Main.app.window , MainApplication.APP_VERSION);
+            MyAboutDialogKt.aboutDialog(Main.app.window , MainApplication.APP_VERSION);
         } , this));
 
         stack.setTransitionType(StackTransitionType.SLIDE_LEFT_RIGHT);

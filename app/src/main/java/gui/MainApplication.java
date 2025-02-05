@@ -33,6 +33,7 @@ public class MainApplication extends Application{
     CssProvider cssProvider;
     CssProvider customThemeProvider;
 
+
     public boolean ctrlIsPressed = false;
     public static final String APP_ID = "io.github.hamza_algohary.Coulomb";
     public static final String APP_VERSION = "0.6.1";
@@ -53,6 +54,8 @@ public class MainApplication extends Application{
 
             cssProvider = new CssProvider();
             customThemeProvider = new CssProvider();
+
+
 
             loadStyle();
 
