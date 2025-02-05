@@ -130,14 +130,14 @@ public class Color{
     }
 
     public static void initImage(Image image , String name , int size) throws Exception {
-        if(Platform.isWindows()) {
-            String target = Resource.PREFIX + Color.icon_raster(name);
-            //Platform.extractResource("/win"+Color.icon_png(name), target);
-            image.setFromFile(target);
-            //image.setFromPixbuf(Color.pixbufFromResourceRaster(name));
-        } else {
+//        if(Platform.isWindows()) {
+//            String target = Resource.PREFIX + Color.icon_raster(name);
+//            //Platform.extractResource("/win"+Color.icon_png(name), target);
+//            image.setFromFile(target);
+//            //image.setFromPixbuf(Color.pixbufFromResourceRaster(name));
+//        } else {
             image.setFromPixbuf(Color.pixbufFromResource(name,size));
-        }
+//        }
     }
 
     public static Image newImage(String name , int size) throws Exception {
@@ -157,7 +157,12 @@ public class Color{
         try {
             try {
                 IconTheme theme = IconTheme.getForDisplay(Display.getDefault());
-                return theme.lookupIcon(MainApplication.APP_ID , new Strs(new String[0]) , 255 , 1 , 4 , 0).asPaintable();
+                var icon = theme.lookupIcon(MainApplication.APP_ID , new Strs(new String[0]) , 256 , 1 , 4 , 0).asPaintable();
+                if (icon == null) {
+                    throw new Exception();
+                } else {
+                    return icon;
+                }
             }catch (Exception e) {
                 return newImage("coulomb" , 256).getPaintable();
             }
