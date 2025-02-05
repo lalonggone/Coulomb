@@ -18,8 +18,8 @@ clone:
 	git clone $(remote)
 update:
 	cd io.github.hamza_algohary.Coulomb && git pull
-publish: builder lint
+publish: build lint
 	cd io.github.hamza_algohary.Coulomb && git push
-	echo "visit https://github.com/flathub/io.github.hamza_algohary.Coulomb and open pull request."
+	@echo "visit https://github.com/flathub/io.github.hamza_algohary.Coulomb and open pull request."
 delete: clean
 	rm -rf io.github.hamza_algohary.Coulomb
