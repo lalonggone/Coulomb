@@ -1,14 +1,9 @@
 <a id="readme-top"></a>
-
-<br />
-
 <div align="center">
 <a href="https://github.com/hamza-Algohary/Coulomb">
     <img src="app/src/main/resources/icons/vector/dark/coulomb.svg" alt="Logo" width="256" height="256">
 </a>
-<br/>
-
-<h3 style="font-size:26px" align="center">Coulomb</h3>
+<h3 style="font-size:36px" align="center">Coulomb</h3>
 <p align="center">
     A simple and beautiful circuit simulator app for Linux.
 </p>
