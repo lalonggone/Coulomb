@@ -113,7 +113,8 @@ public class HamburgerMenu extends Popover {
             //new AboutDialog().show();
 
             //new MyAbout().run(Main.app.window , MainApplication.APP_VERSION);
-            MyAboutDialogKt.aboutDialog(Main.app.window , MainApplication.APP_VERSION);
+            //MyAboutDialogKt.aboutDialog(Main.app.window , MainApplication.APP_VERSION);
+            MyAboutDialogKt.getAboutDialog().show();
         } , this));
 
         stack.setTransitionType(StackTransitionType.SLIDE_LEFT_RIGHT);

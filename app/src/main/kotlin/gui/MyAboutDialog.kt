@@ -31,9 +31,9 @@ import gui.rowBox
 //    //public fun run(parentWindow : Window , version : String) = aboutDialog(parentWindow , version)
 //}
 
+public val aboutDialog = aboutDialog(Main.app.window , MainApplication.APP_VERSION)
 
-
-public fun aboutDialog(parentWindow : Window , version : String) {
+public fun aboutDialog(parentWindow : Window , version : String) : Window {
     val creditsPage = vbox(10).margins(12).children(
         Label("Code by").cssClasses("title-4").halign(Align.START).hexpand(true),
         hbox(0).children(Label("Hamza Algohary").halign(Align.START).margins(20,10)).cssClasses("card").sizeRequest(-1, 50).hexpand(true),
@@ -53,7 +53,8 @@ public fun aboutDialog(parentWindow : Window , version : String) {
     ).shown()
 
     var window = Window()
-    window.ref()
+    //window.ref()
+    window.hideOnClose=true
     var headerBar = HeaderBar()
     var stack = Stack()
     stack.setTransitionType(StackTransitionType.SLIDE_LEFT_RIGHT)
@@ -143,9 +144,8 @@ public fun aboutDialog(parentWindow : Window , version : String) {
 
             stack.addNamed(licensePage, "license")
             stack.addNamed(creditsPage , "credits")
-        
-        show()
-
     }
+
+    return window;
 }
 
