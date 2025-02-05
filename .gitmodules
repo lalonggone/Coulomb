@@ -2,3 +2,6 @@
 	path = flathub
 	url = https://github.com/hamza-algohary/flathub
 	branch = my-app-submission
+[submodule "io.github.hamza_algohary.Coulomb"]
+	path = io.github.hamza_algohary.Coulomb
+	url = https://github.com/flathub/io.github.hamza_algohary.Coulomb
