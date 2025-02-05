@@ -4,7 +4,7 @@
 
 <div align="center">
 <a href="https://github.com/hamza-Algohary/Coulomb">
-    <img src="app/src/main/resources/icons/vector/dark/coulomb.svg" alt="Logo" width="128" height="128">
+    <img src="app/src/main/resources/icons/vector/dark/coulomb.svg" alt="Logo" width="256" height="256">
 </a>
 <br/>
 
