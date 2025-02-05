@@ -6,11 +6,16 @@
 <a href="https://github.com/hamza-Algohary/Coulomb">
     <img src="app/src/main/resources/icons/vector/dark/coulomb.svg" alt="Logo" width="128" height="128">
 </a>
+<br/>
+
 <h3 style="font-size:26px" align="center">Coulomb</h3>
 <p align="center">
     A simple and beautiful circuit simulator app for Linux.
-<br/> <br/>
 </p>
+<a href="https://flathub.org/apps/io.github.hamza_algohary.Coulomb">
+   <img src="https://flathub.org/api/badge?svg&locale=en">
+</a>
+<br/><br/>
 </div>
 
 ![](screenshots/flathub/rlc-light.png)
