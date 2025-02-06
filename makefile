@@ -20,6 +20,7 @@ update:
 	cd io.github.hamza_algohary.Coulomb && git pull
 publish: build lint
 	cd io.github.hamza_algohary.Coulomb && git push
-	@echo "visit https://github.com/flathub/io.github.hamza_algohary.Coulomb and open pull request."
+	@echo "Visit https://github.com/hamza-algohary/io.github.hamza_algohary.Coulomb and open pull request."
+	@echo "Then visit https://github.com/flathub/io.github.hamza_algohary.Coulomb and merge."
 delete: clean
 	rm -rf io.github.hamza_algohary.Coulomb
