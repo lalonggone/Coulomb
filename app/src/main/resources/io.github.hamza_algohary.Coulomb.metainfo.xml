@@ -60,13 +60,14 @@
     <releases>
         <release version="0.6.1" date="2024-2-6">
             <description>
-                Updated icon. Fixed the app crashing when switching color scheme after opening about window.
+                <p> Updated icon. Fixed the app crashing when switching color scheme after opening about window. </p>
             </description>
         </release>
         <release version="0.6.0" date="2024-12-2">
             <description>
-                Made necessary changes for flatpak support, making use of portals, and adding a
-                proper app ID.
+                <p>
+                    Made necessary changes for flatpak support, making use of portals, and adding a proper app ID.
+                </p>
             </description>
         </release>
     </releases>
