@@ -26,8 +26,7 @@
     </recommends>
     <description>
         <p>
-            Coulomb is a simple and elegant circuit simulator written using Java, Gtk4 and
-            libadwaita.
+            Coulomb is a simple and elegant circuit simulator written.
         </p>
         <p>Features:</p>
         <ul>
@@ -59,6 +58,11 @@
 
     </description>
     <releases>
+        <release version="0.6.1" date="2024-2-6">
+            <description>
+                Updated icon. Fixed the app crashing when switching color scheme after opening about window.
+            </description>
+        </release>
         <release version="0.6.0" date="2024-12-2">
             <description>
                 Made necessary changes for flatpak support, making use of portals, and adding a
