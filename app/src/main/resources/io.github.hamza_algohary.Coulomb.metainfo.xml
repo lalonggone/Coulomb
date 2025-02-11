@@ -58,7 +58,7 @@
 
     </description>
     <releases>
-        <release version="0.6.1" date="2024-2-6">
+        <release version="0.6.1" date="2025-2-6">
             <description>
                 <p> Updated icon. Fixed the app crashing when switching color scheme after opening about window. </p>
             </description>
