@@ -24,3 +24,4 @@ publish: build lint
 	@echo "Then visit https://github.com/flathub/io.github.hamza_algohary.Coulomb and merge."
 delete: clean
 	rm -rf io.github.hamza_algohary.Coulomb
+test: clean build debug lint preview
