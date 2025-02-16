@@ -79,19 +79,23 @@
     <screenshots>
         <screenshot type="default">
             <caption>Draw a circuit and press run</caption>
-            <image>https://github.com/hamza-Algohary/Coulomb/blob/main/screenshots/flathub/double-clipper-light.png?raw=true</image>
+            <image>https://github.com/hamza-Algohary/Coulomb/blob/main/screenshots/flathub/1.png?raw=true</image>
         </screenshot>
         <screenshot>
             <caption>Hover over a device to see its current and voltage</caption>
-            <image>https://github.com/hamza-Algohary/Coulomb/blob/main/screenshots/flathub/ohm-light.png?raw=true</image>
+            <image>https://github.com/hamza-Algohary/Coulomb/blob/main/screenshots/flathub/2.png?raw=true</image>
+        </screenshot>
+        <screenshot>
+            <caption>Double click a device to plot its voltage/current with respect to time</caption>
+            <image>https://github.com/hamza-Algohary/Coulomb/blob/main/screenshots/flathub/3.png?raw=true</image>
         </screenshot>
         <screenshot>
             <caption>Dark mode is supported</caption>
-            <image>https://github.com/hamza-Algohary/Coulomb/blob/main/screenshots/flathub/led-dark.png?raw=true</image>
+            <image>https://github.com/hamza-Algohary/Coulomb/blob/main/screenshots/flathub/4.png?raw=true</image>
         </screenshot>
         <screenshot>
-            <caption>Example circuits available</caption>
-            <image>https://github.com/hamza-Algohary/Coulomb/blob/main/screenshots/flathub/zener-dark.png?raw=true</image>
+            <caption>Built-in examples included</caption>
+            <image>https://github.com/hamza-Algohary/Coulomb/blob/main/screenshots/flathub/5.png?raw=true</image>
         </screenshot>
     </screenshots>
 </component>
