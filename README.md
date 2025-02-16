@@ -13,9 +13,9 @@
 <br/><br/>
 </div>
 
-![](screenshots/flathub/rlc-light.png)
+![](screenshots/github/rlc-light.png)
 
-![](screenshots/flathub/zener-dark.png)
+![](screenshots/github/zener-dark.png)
 
 ## Installation
 You can install Coulomb from [Flathub](https://flathub.org/apps/io.github.hamza_algohary.Coulomb).
