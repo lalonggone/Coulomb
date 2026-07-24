@@ -28,7 +28,7 @@ public class Equations extends Vector<Equation>{
         HashMap<String , Double> varsMap = new HashMap<String , Double>();      
         int i = 0;
         while(element.hasNext()){
-            varsMap.put(varNames[i],(Math.ceil(element.next()*1000000)/1000000));
+            varsMap.put(varNames[i],(Math.round(element.next()*1000000)/1000000d));
             i++;
         }
         return varsMap;
