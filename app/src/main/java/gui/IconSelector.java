@@ -30,7 +30,8 @@ public class IconSelector extends ScrolledWindow {
         for (int i = 0; i < iconNames.length; i++) {
             buttons[i] = new SelectorButton();
             buttons[i].setDevice(iconNames[i]);
-            buttons[i].setGroup(buttons[0]);
+            if (i != 0)
+                buttons[i].setGroup(buttons[0]);
             box.append(buttons[i]);
         }
         this.setSizeRequest(375, -1);

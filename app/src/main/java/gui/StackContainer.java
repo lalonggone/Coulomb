@@ -7,6 +7,7 @@ import java.util.Collections;
 import java.util.Vector;
 import java.util.function.Function;
 
+import ch.bailu.gtk.cairo.Content;
 import ch.bailu.gtk.cairo.Context;
 import ch.bailu.gtk.cairo.Surface;
 import ch.bailu.gtk.gdk.GdkConstants;
@@ -159,7 +160,7 @@ public class StackContainer extends DrawingArea {
         this.onResize((width, height) -> {
             if (surface != null)
                 surface.destroy();
-            surface = this.getNative().getSurface().createSimilarSurface(0, width, height);
+            surface = this.getNative().getSurface().createSimilarSurface(Content.COLOR_ALPHA, width, height);
             this.queueDraw();
         });
 

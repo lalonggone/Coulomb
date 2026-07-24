@@ -1,5 +1,6 @@
 package gui.oscilliscope;
 
+import ch.bailu.gtk.cairo.Content;
 import ch.bailu.gtk.cairo.Surface;
 import ch.bailu.gtk.gtk.DrawingArea;
 import graphics.Color;
@@ -58,7 +59,7 @@ public class Oscilliscope extends DrawingArea {
         this.onResize((width, height) -> {
             if (surface != null)
                 surface.destroy();
-            surface = this.getNative().getSurface().createSimilarSurface(0, width, height);
+            surface = this.getNative().getSurface().createSimilarSurface(Content.COLOR_ALPHA, width, height);
             this.queueDraw();
         });
 
